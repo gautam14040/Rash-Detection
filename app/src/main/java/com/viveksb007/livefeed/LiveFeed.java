@@ -59,7 +59,7 @@ public class LiveFeed extends Activity {
         setContentView(R.layout.live_feed);
         ButterKnife.bind(this);
 
-        Log.v("IP_ADDRESS", getIpAddress());
+        Log.d("IP_ADDRESS", getIpAddress());
 
         ServerSocketThread startServer = new ServerSocketThread();
         startServer.start();
